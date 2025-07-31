@@ -1,0 +1,47 @@
+.card-item {
+    width: 200px;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.card-item:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+.card-text {
+    margin: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    transition: background-color 0.3s ease;
+}
+
+.card-item:hover .card-text {
+    background-color: rgba(255, 0, 0, 0.85);
+}
+
+.card-item h2 {
+    text-align: center;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.card-item:hover h2 {
+    color: #ffeaea;
+}
