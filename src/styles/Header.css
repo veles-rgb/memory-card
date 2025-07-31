@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg, #000000, #1a0000);
+    color: white;
+    border-bottom: 2px solid red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Sternbach Hollow', sans-serif;
+    font-size: 3.5rem;
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    margin: 0;
+    animation: flicker 3s infinite;
+}
+
+header p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+@keyframes flicker {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0.85;
+    }
+
+    48% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    52% {
+        opacity: 0.6;
+    }
+
+    55% {
+        opacity: 1;
+    }
+}
