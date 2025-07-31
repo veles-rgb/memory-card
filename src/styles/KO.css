@@ -1,0 +1,54 @@
+#ko-container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #000000 30%, #3a0000 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#ko-container h1 {
+    font-family: 'Sternbach', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 20px #ff0000, 0 0 50px #ff0000;
+    animation: ko-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes ko-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.9;
+    }
+}
+
+#ko-container button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#ko-container button:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 10px red;
+}
