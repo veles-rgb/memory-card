@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Sternbach';
-    src: url('src/assets/fonts/Sternbach Bold Italic.otf') format('opentype');
+    src: url('/fonts/SternbachBoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sternbach Hollow';
-    src: url('src/assets/fonts/Sternbach Hollow Italic.otf') format('opentype');
+    src: url('/fonts/SternbachHollowItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
