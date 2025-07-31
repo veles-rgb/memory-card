@@ -1,0 +1,82 @@
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid red;
+    background: linear-gradient(90deg, #1a0000, #330000);
+    border-radius: 12px;
+    font-family: 'Sternbach', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #ff4a4a;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+    flex-wrap: wrap;
+}
+
+#scoreboard:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+}
+
+.current-score,
+.high-score {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.high-score {
+    color: white;
+}
+
+.current-score:hover,
+.high-score:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.card-count-input {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+}
+
+.card-count-input label {
+    font-family: 'Sternbach', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #ff4a4a;
+}
+
+.card-count-input input[type="number"] {
+    background-color: black;
+    border: 2px solid red;
+    color: #ff4a4a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    appearance: textfield;
+}
+
+.card-count-input input[type="number"]:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    background-color: #1a0000;
+}
+
+.card-count-input input[type="number"]::-webkit-inner-spin-button,
+.card-count-input input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
