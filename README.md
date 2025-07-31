@@ -35,6 +35,7 @@ Created for [The Odin Project](https://www.theodinproject.com/lessons/node-path-
 
 - Fighter images from [Octagon API](https://api.octagon-api.com)
 - Fonts from [dafont](https://www.dafont.com/sternbach.font)
+- Punching Baby GIF by [chutimanthonglue](https://pixabay.com/gifs/boxing-sport-angry-kid-punch-1143/)
 
 ## Todo (possibly)
 
